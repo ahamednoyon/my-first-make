@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#primary_menu {
+    list-style: none;
+}
+
+#primary_menu li {
+    float: left;
+    position: ;
+}
+
+#primary_menu li a {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    transition: 0.75s;
+}
+
+#primary_menu li a:hover {
+    background: #ff5536;
+    color: white;
+    transform: scale(1.1);
+
+}
+
+
+
+#mainNav {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border-bottom: 2px solid tomato;
+
+
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 130px;
+    float: left;
+    cursor: pointer;
+}
+
+#menuContainer {
+    width: 650px;
+    float: right;
+}
+
+
+.displaysize {
+    width: 1170px;
+    margin: auto;
+}
+
+
+/* dropdown manu*/
+
+
+
+#sub_manu {
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    top: 69px;
+    background: #ff836d;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.85s;
+    opacity: 0;
+
+}
+
+#primary_menu li:hover #sub_manu {
+    transform: scaleY(1);
+    opacity: 1;
+
+}
+
+ul#sub_manu li a {
+    transition: all 1s;
+}
+
+ul#sub_manu li:hover a {
+    padding-left: 40px;
+    border-bottom: 1px solid #ffffff;
+}
+
+#sub_manu li a {
+    padding: 10px;
+}
+
+#sub_manu li {
+    float: none;
+
+}
+
+/* KEYFRAME*/
+
+#service_title {
+    text-align: center;
+    text-shadow: -6px 6px 2px black;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 86px;
+    margin-bottom: 50px;
+}
+
+span {
+    color: tomato;
+}
+
+#contents {
+    width: 335px;
+    height: 135px;
+    background: white;
+
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 31px;
+    margin-bottom: 12px;
+    margin-left: 39px;
+    display: inline-block;
+    transition: all 0.65s;
+    animation-name: XoomIn;
+    animation-duration: 1.5s;
+}
+
+
+
+@keyframes XoomIn {
+
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+#contents:hover {
+    background: #0089ff00;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-15px);
+
+}
+
+#contents:hover #title {
+    color: white;
+}
+
+#title {
+    float: left;
+    width: 100px;
+    margin-top: 44px;
+    color: #fd4f30;
+}
+
+#paragraph {
+    float: right;
+    width: 200px;
+    margin-top: 32px;
+    color: ;
+}
+
+#allblocks {
+    width: 1170px;
+    margin: auto;
+    height: 600px;
+
+}
+
+#background {
+    background: linear-gradient(1deg, #161c3e, #151d41);
+
+}
+
+#full2 {
+    background: linear-gradient(0.1deg, #150b03, #161c3e);
+}
+
+#about_title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px black;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+
+#Left_content {
+    width: 500px;
+
+}
+
+#pic {
+    box-shadow: -11px -10px 20px 4px black;
+    border: 1px solid tomato;
+}
+
+#Right_content {
+    width: 591px;
+    color: #b1b1b1;
+    float: right;
+}
+
+#Left_content,
+#Right_content {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#name {
+    color: #ffffff;
+    margin-bottom: 66px;
+    border-bottom: 1px solid #b1b1b1;
+    font-size: 30px;
+    padding: 8px;
+    margin-top: 9px;
+}
+
+#name:hover {
+    color: tomato;
+    border-bottom: 1px solid tomato;
+    cursor: pointer;
+}
+
+/* END footer*/
+
+
+footer {
+
+    background: linear-gradient(0.1deg, #302207, #150b04);
+    color: #989898;
+}
+
+#display_size {
+    width: 1216px;
+    margin: auto;
+}
+
+#footer_block {
+    width: 250px;
+    display: inline-table;
+    margin: 25px 18px;
+
+}
+
+
+
+#footer_block h2 {
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+
+}
+
+#footer_block h2:hover {
+    color: tomato;
+    border-bottom: 1px solid tomato;
+}
+
+
+#subscribeform {
+    width: 100%;
+    height: 164px;
+}
+
+#subscribeform input {
+    width: 237.5px;
+    padding: 5px;
+    margin: 6px 0px;
+}
+
+input#subscribe_button {
+    width: 99.8%;
+    background: tomato;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input#subscribe_button:hover {
+    transform: scale(0.9);
+    background: transparent;
+    color: #fff;
+}
+
+ul#custom_menu li {
+    list-style: none;
+    border-bottom: 1px solid #98989880;
+}
+
+ul#custom_menu a {
+    text-decoration: none;
+    color: #989898;
+    line-height: 25px;
+}
+
+ul#custom_menu li:last-child {
+    border: none;
+}
+
+ul#custom_menu a:hover {
+    text-decoration: underline;
+}
+
+#last {
+    width: 100%;
+    background: white;
+    padding: 16px 0px;
+    color: black;
+    text-align: center;
+}
+
+#last b {
+    font-size: 16px;
+
+}
